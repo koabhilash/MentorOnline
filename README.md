@@ -81,6 +81,15 @@ MentorOnline/
 - Monitor student information
 - Manage academic-related activities
 
+## Backend Setup
+
+The application uses a PHP and MySQL backend hosted locally using XAMPP.
+
+The APK provided in the release is intended for demonstration purposes. 
+Backend-dependent features require the PHP server and MySQL database to be configured and running.
+
+The backend source code and database configuration are not included in the APK.
+
 ## Author
 
 **K. Abhilash**
