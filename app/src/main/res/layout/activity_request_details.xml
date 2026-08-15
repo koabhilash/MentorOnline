@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- Header -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#457AFF"
+        android:padding="16dp">
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            android:src="@drawable/ic_back_arrow"
+            android:contentDescription="Back" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Request"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/card_background"
+            android:elevation="4dp">
+
+            <!-- Your existing TextViews, EditText, and Buttons here -->
+            <!-- (same as you already posted) -->
+
+            <!-- Student Name & Registration Number -->
+            <TextView
+                android:id="@+id/tvStudentNameReg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student Name (Reg Number)"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <!-- Subject -->
+            <TextView
+                android:id="@+id/tvSubject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject: "
+                android:textSize="16sp"
+                android:paddingBottom="8dp" />
+
+            <!-- Reason -->
+            <TextView
+                android:id="@+id/tvReason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reason: "
+                android:textSize="16sp"
+                android:paddingBottom="8dp" />
+
+            <!-- Start Date & End Date -->
+            <TextView
+                android:id="@+id/tvStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Date: "
+                android:textSize="16sp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End Date: "
+                android:textSize="16sp"
+                android:paddingBottom="8dp" />
+
+            <!-- Proofs (Clickable link) -->
+            <TextView
+                android:id="@+id/tvProofs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proofs: Click to view"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="16sp"
+                android:paddingBottom="8dp"
+                android:clickable="true"
+                android:textStyle="bold" />
+
+            <!-- Permission Letter (Clickable link) -->
+            <TextView
+                android:id="@+id/tvPermissionLetter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Permission Letter: Click to view"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="16sp"
+                android:paddingBottom="8dp"
+                android:clickable="true"
+                android:textStyle="bold" />
+
+            <!-- Tagged Person -->
+            <TextView
+                android:id="@+id/tvTaggedPerson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tagged Person: "
+                android:textSize="16sp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvTaggingId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tagging ID: "
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <!-- Request ID -->
+            <TextView
+                android:id="@+id/tvRequestId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Request ID: "
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+
+            <!-- Mentor Comment Input -->
+            <EditText
+                android:id="@+id/etMentorComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your comment here"
+                android:background="@drawable/input_background"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:minHeight="100dp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:layout_marginTop="8dp" />
+
+            <!-- Action Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="16dp">
+
+                <Button
+                    android:id="@+id/btnReject"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Reject"
+                    android:backgroundTint="#FF4949"
+                    android:textColor="@color/white"
+                    android:padding="12dp"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="16dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btnApprove"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Approve"
+                    android:backgroundTint="#0CD444"
+                    android:textColor="@color/white"
+                    android:padding="12dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

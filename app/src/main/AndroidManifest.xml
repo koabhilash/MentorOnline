@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="31">
+        <activity
+            android:name=".GetStartedActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SelectRoleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentDashboardActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MentorDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MentorDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityReportIssue"
+            android:exported="false" />
+        <activity
+            android:name=".SendRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CheckStatusActivity"
+            android:exported="false" />
+        <activity
+        android:name=".CGPAActivity"
+        android:exported="false" />
+        <activity
+            android:name=".ActivityCertificate"
+            android:exported="false" />
+        <activity
+            android:name=".CertificateAddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CertificateAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".CertificateListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CertificateDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AchievementAddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AchievementAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".AchievementListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AchievementDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityAchievements"
+            android:exported="false" />
+        <activity
+            android:name=".CGPDisplayAActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchStudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".StudentProfilePageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RequestsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RequestDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IssuesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IssuesAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".IssueDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityNavigation"
+            android:exported="false" />
+
+        <activity
+            android:name=".LeaveRequestsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LeaveRequestsAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".LeaveRequestDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentIssueAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".StudentIssueListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FullIssueDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateIssueActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TaggingRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TaggingRequestAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".FullTaggingRequestDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateLeaveRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateCertificateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateAchievementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MentorPofileDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RequestHistMen"
+            android:exported="false" />
+        <activity
+            android:name=".RequestHistMenAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".MentorAccount"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityMentorNavigationBar"
+            android:exported="false" />
+        <activity
+            android:name=".RequestHistDetailsMen"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateRequestHistMen"
+            android:exported="false" />
+        <activity
+            android:name=".HistTaggingRequest"
+            android:exported="false" />
+        <activity
+            android:name=".HistTaggingReqAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".HistTaggingReqDetails"
+            android:exported="false" />
+        <activity
+            android:name=".IssueHistAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".IssueHistDetails"
+            android:exported="false" />
+        <activity
+            android:name=".IssueHistMentor"
+            android:exported="false" />
+        <activity
+            android:name=".MenteeAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".MentorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SelectableStudentAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".DisplayMenteesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DisplayMenteeAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".StdNotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StdNotificationAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".StdNotifiDetails"
+            android:exported="false" />
+
+
+
+
+
+
+
+
+
+
+    </application>
+
+</manifest>
